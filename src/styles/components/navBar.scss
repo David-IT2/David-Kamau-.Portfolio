@@ -1,0 +1,109 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding: 0 2rem;
+    background-color: $primary-color;
+    color: $text-color;
+    box-shadow: inset -9px -9px 18px #041a2c,
+        inset 9px 9px 18px #0c4270;
+}
+
+header h4 {
+    font-family: $heading-font;
+}
+
+nav {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    transition: all 0.3s 0.2s;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    background: $primary-color;
+    box-shadow: 6px 6px 10px rgba(3, 18, 31, 0.4),
+        1px 1px 10px #0d4a7d;
+}
+
+nav li a {
+    font-family: $body-font;
+    color: $text-color;
+    text-decoration: none;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background: $primary-color;
+    transform: scale(1.05);
+    box-shadow: 6px 6px 10px #03121f66,
+        1px 1px 10px #0d4a7d,
+        inset 2px 2px 10px #03121f66,
+        inset -1px -1px 5px #0d4a7d;
+}
+
+nav li a:hover {
+    color: $secondary-color;
+}
+
+nav li a:focus {
+    color: $secondary-color;
+}
+
+header .navBtn {
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: $text-color;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media all and (max-width: 1024px) {
+    header .navBtn {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    header nav {
+        position: fixed;
+        padding: 40px 0;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: $primary-color;
+        box-shadow: inset -11px 11px 7px #03121f66,
+            inset 11px -11px 7px #0d4a7d;
+        transition: 1s;
+        transform: translateY(-100vh);
+        z-index: 100;
+    }
+
+    nav li {
+        width: 70%;
+        text-align: center;
+    }
+
+    header .responsiveNav {
+        transform: none;
+    }
+
+    nav .navCloseBtn {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 25px;
+    }
+}
