@@ -50,3 +50,46 @@
     font-family: $heading-font;
     color: $secondary-color;
 }
+
+/* Email copy styles */
+.emailCopy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emailCopy .emailLeft {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.emailCopy .emailLeft img {
+    width: 20px;
+    height: 20px;
+}
+
+.emailCopy .emailAddress {
+    color: $text-color;
+    text-decoration: none;
+    font-family: $body-font;
+}
+
+.copyButton {
+    background: transparent;
+    border: none;
+    padding: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: $muted-color;
+}
+
+.copyButton:hover {
+    color: $secondary-color;
+}
+
+.copyButton svg {
+    display: block;
+}
