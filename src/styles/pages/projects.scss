@@ -5,7 +5,7 @@
 }
 .mainProjectContainer h1{
     font-family: $heading-font;
-    color: $secondary-color;
+    color: $heading-color;
     text-align: center;
     margin: 20px 0;
 }
@@ -44,6 +44,7 @@
 }
 .projectContent h3{
     font-family: $heading-font;
+    color: $heading-color;
     margin-bottom: 15px;
 }
 .projectContent p{
