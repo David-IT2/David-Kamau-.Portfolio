@@ -12,7 +12,7 @@ function Home() {
             My name is David Kamau
           </h1>
           <p className="animate__animated animate__backInRight">
-            I am a Software Engineer
+            I am a Full-Stack Software Developer
           </p>
         </div>
         <div className="homeBtn">
