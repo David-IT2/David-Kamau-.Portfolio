@@ -55,8 +55,7 @@ function EmailWithCopy({ soc }) {
 }
 
 function Contact() {
-  const mySocials = [
-    {
+  const mySocials = [    {
       image: email,
       title: "Gmail",
       link: "mailto:davidkamauw90@gmail.com",
@@ -94,7 +93,7 @@ function Contact() {
         </p>
 
         <div className="mySocials animate__animated animate__backInRight">
-          <h3>My socials</h3>
+          
           <div className="socialsList">
             {mySocials.map((soc, index) => (
               <li key={index}>
