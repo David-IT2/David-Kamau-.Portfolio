@@ -16,7 +16,7 @@ function Projects() {
         >
           <div className="projectBox">
             <div className="projectPrototype">
-              <img src={list.mainImg} alt="projects" />
+              <img src={list.mainImg} alt={list.name} />
             </div>
             <div className="projectInfo">
               <div className="projectContent">
@@ -26,11 +26,10 @@ function Projects() {
               <div className="projectIcons">
                 <p>Technologies used:</p>
                 <div className="languageList">
-                  {" "}
                   {list.technologies.map((item, index) => (
                     <li key={index}>
                       <span>
-                        <img src={item.icon} alt="icons" />
+                        <img src={item.icon} alt={`${item.name} icon`} />
                       </span>
                       {item.name}
                     </li>
@@ -40,7 +39,7 @@ function Projects() {
               <div className="projectButtons">
                 <Button3
                   name="View Live"
-                  icon=<FiExternalLink />
+                  icon={<FiExternalLink />}
                   link={list.liveLink}
                 />
                 {list.codeLinks?.length
@@ -48,14 +47,14 @@ function Projects() {
                       <Button3
                         key={i}
                         name={repo.name}
-                        icon=<BsGithub />
+                        icon={<BsGithub />}
                         link={repo.link}
                       />
                     ))
                   : (
                     <Button3
                       name="View Code"
-                      icon=<BsGithub />
+                      icon={<BsGithub />}
                       link={list.codeLink}
                     />
                   )}
@@ -74,7 +73,7 @@ function Projects() {
         >
           <div className="projectBox">
             <div className="projectPrototype">
-              <img src={list.mainImg} alt="projects" />
+              <img src={list.mainImg} alt={list.name} />
             </div>
             <div className="projectInfo">
               <div className="projectContent">
@@ -84,11 +83,10 @@ function Projects() {
               <div className="projectIcons">
                 <p>Tool used:</p>
                 <div className="languageList">
-                  {" "}
                   {list.technologies.map((item, index) => (
                     <li key={index}>
                       <span>
-                        <img src={item.icon} alt="icons" />
+                        <img src={item.icon} alt={`${item.name} icon`} />
                       </span>
                       {item.name}
                     </li>
@@ -98,7 +96,7 @@ function Projects() {
               <div className="projectButtons">
                 <Button3
                   name="View Prototype"
-                  icon=<FiExternalLink />
+                  icon={<FiExternalLink />}
                   link={list.liveLink}
                 />
               </div>
