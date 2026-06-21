@@ -32,11 +32,19 @@
 .projectPrototype{
     // border: 6px solid red;
     width: 500px;
+    min-height: 360px;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.03);
 }
 .projectPrototype img{
-    width: 320px;
+    width: 100%;
+    height: 100%;
+    display: block;
     object-fit: cover;
+    object-position: center;
 }
 .projectInfo{
     // border: 2px solid black;
@@ -86,16 +94,20 @@
     }
     .projectPrototype{
         width: 100%;
+        min-height: 280px;
     }
     .projectPrototype img{
         width: 100%;
+        height: 100%;
     }
 }
 @media all and (max-width: 320px){
     .projectPrototype{
         max-width: 260px;
+        min-height: 240px;
     }
     .projectPrototype img{
-        width: 260px;
+        width: 100%;
+        height: 100%;
     }
 }
