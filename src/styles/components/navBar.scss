@@ -12,6 +12,7 @@ header {
 
 header h4 {
     font-family: $heading-font;
+    color: $heading-color;
 }
 
 nav {
@@ -47,11 +48,11 @@ nav li:hover {
 }
 
 nav li a:hover {
-    color: $secondary-color;
+    color: $heading-color;
 }
 
 nav li a:focus {
-    color: $secondary-color;
+    color: $heading-color;
 }
 
 header .navBtn {
