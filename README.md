@@ -1,18 +1,13 @@
 # Project Name: David Kamau Portfolio
 
+
 [![Built with React](https://img.shields.io/badge/Built%20with-React-blue)](https://reactjs.org/)
-##
+
+Live :https://david-kamau-portfolio.web.app/
+
 ## Description
 This repository contains the source code and assets for my personal portfolio website. The website showcases my work, skills, and provides information about me as a professional.
 
-## Live Demo
-
-Deploy to Firebase Hosting — see [DEPLOY.md](./DEPLOY.md) for step-by-step instructions.
-
-```bash
-npm install
-npm run deploy
-```
 ## Technologies used
 
 - ![ReactJS](https://img.shields.io/badge/-ReactJS-blueviolet)
